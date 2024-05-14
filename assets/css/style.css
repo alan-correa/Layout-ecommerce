@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+.md {
+    font-size: 16px;
+}
+
+.xl {
+    font-size: 26px;
+}
+
+.lg {
+    font-size: 30px;
+}
+
+.header {
+    grid-area: header;
+    display: grid;
+    background-color: #224E34;
+    text-align: center;
+    color: #EDEDED;
+}
+
+
+.main {
+    grid-area: main;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 50px;
+    padding: 50px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.sidebar {
+    grid-area: sidebar;
+    display: grid;
+    padding: 20px;
+    justify-content: stretch;
+    align-items: center;
+    text-align: center;
+    align-content: start;
+    gap: 60px;
+    background-color: #224E34;
+    color: #fff;
+    overflow-x: hidden;
+}
+
+.sidebar a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.sidebar a :hover {
+    color: #cdc3e6;
+}
+
+.footer {
+    grid-area: footer;
+    display: grid;
+    background-color: #224E34;
+    text-align: center;
+    color: #EDEDED;
+}
+
+.container {
+    display: grid;
+    grid-template-areas:
+        'header header'
+        'sidebar main'
+        'footer footer'
+}
+
+.categoria img {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+}
+
+.producto img {
+    width: 287px;
+    height: 321px;
+    border-radius: 30%;
+}
+
+.comprar {
+    display: flex;
+    justify-content: space-around;
+    flex-grow: 1;
+    padding: 20px;
+}
+
+.boton {
+    background-color: #1D5C41;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 13px 48px;
+}
+
+.comprar :hover {
+    color: #cdc3e6;
+}
+
